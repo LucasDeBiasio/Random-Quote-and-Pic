@@ -1,0 +1,125 @@
+html{
+    background-color: #CA9268;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.5fr 1.5fr;
+    grid-template-areas:
+        "heading"
+        "subheading"
+        "button-container"
+        "quote"
+        "image";
+    grid-gap: 0.2rem;
+
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+button {
+
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2rem 2.8rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #CA9268;
+    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 white;
+    transition: all 150ms ease-in-out;
+}
+    button:hover {
+        box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+        outline: 0;
+        color: white;
+    }
+    button:focus{
+        outline: 0;
+    }
+    
+
+#QuoteDisplay{
+    color: white;
+    font-size: 2rem;
+}
+
+img {
+    height: 20rem;
+    width: 20rem;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 white;
+    transition: all 150ms ease-in-out;
+}
+
+img:hover{
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+    outline: 0;
+    color: white;
+}
+
+img:focus{
+    outline: 0;
+}
+
+.heading{
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading{
+    grid-area: subheading;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    grid-area: button-container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    grid-area: quote;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
